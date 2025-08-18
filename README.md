@@ -17,7 +17,11 @@ npm i -g @nestjs/cli
 ## 3. Instalar las dependencias
 
 ```bash
+#Con Yarn
 yarn install
+
+#Con Npm
+npm install
 ```
 
 ## 4. Clonar y configurar las variables de entorno
