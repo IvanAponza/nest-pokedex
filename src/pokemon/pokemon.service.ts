@@ -84,6 +84,10 @@ export class PokemonService {
       throw new BadRequestException(`Pokemon with id "${id}" not found`);
     return;
   }
+
+  fillPokemonWithSeedData(){
+    
+  }
   
   //Metodo para manejar errores no controlados
   private handleExceptions(error: any){
