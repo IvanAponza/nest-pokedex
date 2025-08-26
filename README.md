@@ -51,6 +51,11 @@ En caso de necesitar base de datos, configurar el docker-compose.yml y ejecutar
 docker-compose up -d
 ```
 
+## 7. Reconstruir la base de datos con la semilla 
+````
+http://localhost:3000/api/v2/seed
+```
+
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
