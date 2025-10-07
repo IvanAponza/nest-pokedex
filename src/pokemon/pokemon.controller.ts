@@ -14,11 +14,11 @@ import { PokemonService } from './pokemon.service';
 import { CreatePokemonDto } from './dto/create-pokemon.dto';
 import { UpdatePokemonDto } from './dto/update-pokemon.dto';
 import { ParseMongoIdPipe } from 'src/common/pipes/parse-mongo-id/parse-mongo-id.pipe';
-import {PiginationDto} from 'src/common/dto/pagination.dto';
+import { PiginationDto } from 'src/common/dto/pagination.dto';
 
 @Controller('pokemon')
 export class PokemonController {
-  constructor(private readonly pokemonService: PokemonService) {}
+  constructor(private readonly pokemonService: PokemonService) { }
 
   @Post()
   // @HttpCode(HttpStatus.OK)
@@ -47,5 +47,5 @@ export class PokemonController {
     return this.pokemonService.remove(id);
   }
 
-  
+
 }
