@@ -27,7 +27,7 @@ npm install
 ## 4. Clonar y configurar las variables de entorno
 
 ```bash
-cp .template.env .env
+cp env.template .env
 ```
 
 ## 5. Ejecutar el Proyecto
