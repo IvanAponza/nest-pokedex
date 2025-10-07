@@ -48,7 +48,7 @@ yarn run start:prod
 En caso de necesitar base de datos, configurar el docker-compose.yml y ejecutar
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ## 7. Reconstruir la base de datos con la semilla 
