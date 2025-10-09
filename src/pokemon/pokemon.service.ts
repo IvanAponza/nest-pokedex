@@ -7,6 +7,7 @@ import { ConfigService } from '@nestjs/config';
 import { CreatePokemonDto } from './dto/create-pokemon.dto';
 import { UpdatePokemonDto } from './dto/update-pokemon.dto';
 import {PiginationDto} from 'src/common/dto/pagination.dto';
+import { number } from 'joi';
 
 @Injectable()
 export class PokemonService {
@@ -111,7 +112,7 @@ export class PokemonService {
     if(error.code === 11000){
       throw new BadRequestException(`Pokemon exists in DB ${JSON.stringify(error.keyValue)}`);
     }
-    console.log(error);
+    // console.log(error);
     throw new InternalServerErrorException(`Can't create Pokemon - Check server logs`);
   }
 }

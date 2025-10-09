@@ -10,7 +10,7 @@ Repositorio aplicación PokeDex con NestJs, MongoDB, Mongoose.
 
 ## 2. Tener Nest CLI instalado
 
-```
+```bash
 npm i -g @nestjs/cli
 ```
 
@@ -51,8 +51,9 @@ En caso de necesitar base de datos, configurar el docker-compose.yml y ejecutar
 docker compose up -d
 ```
 
-## 7. Reconstruir la base de datos con la semilla 
-````
+## 7. Reconstruir la base de datos con la semilla
+
+```bash
 http://localhost:3000/api/v2/seed
 ```
 
