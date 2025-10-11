@@ -34,13 +34,18 @@ cp env.template .env
 
 ```bash
 # Modo desarrollo
-yarn run start
+yarn run start 
 
 # Modo desarrollo watch
-yarn run start:dev
+yarn run start:dev 
+
+npm run dev
 
 # Modo produción
-yarn run start:prod
+yarn run start:prod 
+
+npm start
+
 ```
 
 ## 6. Levantar la base de datos
@@ -55,6 +60,21 @@ docker compose up -d
 
 ```bash
 http://localhost:3000/api/v2/seed
+```
+# Build de producción - Docker
+1. Crear archivo ```.env.prod```
+2. Llenar las variables de entorno
+3. Crear la nueva Imagen
+```bash
+# Build
+docker compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+
+# Run
+docker compose -f docker-compose.prod.yaml --env-file .env.prod up
+
+# Run watch
+docker compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+
 ```
 
 ## License
